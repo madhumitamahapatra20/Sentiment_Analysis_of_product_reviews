@@ -20,6 +20,7 @@ CSV_FOLDER = os.path.join('static', 'CSVs')
 app = Flask(__name__)
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 # config environment variables
+#Adding com patibility for SSL certificate verification
 app.config['IMG_FOLDER'] = IMG_FOLDER
 app.config['CSV_FOLDER'] = CSV_FOLDER
 
